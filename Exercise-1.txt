@@ -1,0 +1,82 @@
+/* Newton Second Law */
+
+Algorithm:
+1. Buat variabel 'M' dengan nilai 600
+2. Buat variabel 'a' dengan nilai 2
+3. Buat variabel 'F' dengan nilai 'M' * 'a'
+4. Tampilkan nilai 'F'
+
+Pseudocode:
+STORE 'M' with 600
+STORE 'a' with 2
+SET 'F' with 'M' TIMES 'a'
+Display 'F'
+
+
+/*  Tahun Kabisat */
+
+Algorithm:
+1. Tentukan nilai tahun
+2. Buat opsi jika tahun habis dibagi 4 dan tahun tidak habis dibagi 100, maka lanjut ke step 4.
+   Bila tidak lanjut ke opsi 3.
+3. Buat opsi jika tahun habis dibagi 4 dan tahun habis dibagi 100 dan tahun habis dibagi 100, maka lanjut ke step 4
+   Bila tidak maka tampilkan 'bukan tahun kabisat' dan perhitungan selesai.
+4. Tampilkan 'merupakan tahun kabisat' dan perhitungan selesai.
+
+Pseudocode:
+STORE 'Tahun' with any value
+STORE 'cekTahun1' without any value
+STORE 'cekTahun2' without any value
+STORE 'cekTahun3' without any value
+SET 'cekTahun1' with 'Tahun' MOD 4
+SET 'cekTahun2' with 'Tahun' MOD 100
+SET 'cekTahun3' with 'Tahun' MOD 400
+IF 'cekTahun1' EQUALS TO 0 AND 'cekTahun2' NOT EQUALS TO 0 THEN
+    DISPLAY 'merupakan tahun kabisat'
+ELSE IF 'cekTahun' EQUALS TO 0 AND 'cekTahun2' NOT EQUALS TO 0 AND 'cekTahun3' EQUALS TO 0 THEN
+    DISPLAY 'merupakan tahun kabisat'
+ELSE DISPLAY 'bukan merupakan tahun kabisat'
+END IF
+
+/* Laundry Day */
+
+Algorithm:
+1. Masukan 1 buah baju kedalam mesin cuci
+2. Apabila jumlah baju sama dengan 20 maka lanjut ke step 4, 
+    jika tidak maka lanjut ke step 3.
+3. Masukan kembali 1 buah baju kedalam mesin cuci lalu kembali ke step 2
+4. Mesin cuci menyala
+
+Pseudocode:
+STORE 'jumlahBaju' with 1
+WHILE 'jumlahBaju' < 21
+    DISPLAY value of 'jumlahBaju'
+    ADD 'jumlahBaju' by 1
+END WHILE
+DISPLAY 'Mesin cuci menyala'
+
+/* Periksa Kuku */
+
+Algorithm:
+1. Guru berjalan memeriksa kuku murid no-1
+2. Apabila kuku murid tersebut panjang maka murid akan dimarahi,
+    jika tidak maka murid akan dipuji.
+3. Guru berjalan ke murid selanjutnya dan mengulangi step 2 sampai
+    murid ke-40.
+4. Guru akan berhenti memeriksa sampai murid ke-40.
+
+Pseudocode:
+STORE 'murid' with 1
+STORE 'random' without any value
+STORE 'kondisi' without any value
+WHILE 'murid' < 41
+    SET 'random' with random number generator times 100
+    SET 'kondisi' with rounded number of 'random' MOD 2
+    IF 'kondisi' EQUALS TO 0 THEN
+        DISPLAY 'Kuku murid panjang, maka murid dimarahi'
+    ELSE 
+        DISPLAY 'Kuku murid pendek, maka murid dipuji'
+    END IF
+    ADD 'murid' by 1.
+END WHILE
+    
