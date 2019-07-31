@@ -56,7 +56,7 @@ for (var a = 1; a <= 100; a += 5) {
     }
 } 
 
-// Pertambahan counter 5
+// Pertambahan counter 9
 for (var a = 1; a <= 100; a += 9) {
     if ((a%10)== 0){
         console.log(`${a} kelipatan 10`)
