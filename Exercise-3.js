@@ -1,5 +1,5 @@
 var nama = 'Dadang';
-var peran = 'Tabib';
+var peran = '';
 
 if (nama && peran === 'Ksatria') {
     console.log(`Selamat datang di Dunia Proxytia, ${nama}`)
@@ -10,7 +10,7 @@ if (nama && peran === 'Ksatria') {
 } else if(nama && peran === 'Penyihir') {
     console.log(`Selamat datang di Dunia Proxytia, ${nama}`)
     console.log(`Halo Penyihir ${nama}, cipatkan keajaiban yang membantu kemenanganmu`)
-} else if (nama && peran !== true){
+} else if (nama && peran == ''){
     console.log(`Halo ${nama}, Pilih peranmu untuk memulai game`)
 } else {
     console.log('Nama harus diisi!')
